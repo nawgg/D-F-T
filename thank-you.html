@@ -5,15 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Thank You | DF Tailoring Experts</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
+    :root {
+      --primary-color: #925456;   /* fixed typo */
+      --accent-color: #b97d82;
+      --background-color: #f3e9dc;
+      --font-heading: 'Dancing Script', cursive;
+      --font-body: 'Raleway', sans-serif;
+    }
+
     body {
-      font-family: 'Raleway', sans-serif;
-      background-color: #f9f7f6;
+      font-family: var(--font-body);
+      background-color: var(--background-color);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       text-align: center;
+      margin: 0;
     }
 
     .thank-you-card {
@@ -26,19 +36,20 @@
     }
 
     h1 {
-      color: #c49f77;
-      font-family: 'Dancing Script', cursive;
+      color: var(--primary-color);
+      font-family: var(--font-heading);
       font-size: 2.8rem;
+      margin-bottom: 20px;
     }
 
     p {
       font-size: 1.1rem;
-      color: #333;
+      color: var(--primary-color);
       margin-bottom: 30px;
     }
 
     .btn-home {
-      background-color: #c49f77;
+      background-color: var(--accent-color);
       color: white;
       border: none;
       padding: 12px 30px;
@@ -46,10 +57,11 @@
       font-weight: 600;
       transition: 0.3s ease;
       text-decoration: none;
+      display: inline-block;
     }
 
     .btn-home:hover {
-      background-color: #a6805e;
+      background-color: #a6805e; /* darker shade, keep for hover */
       color: white;
     }
   </style>
