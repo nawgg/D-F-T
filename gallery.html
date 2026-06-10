@@ -74,20 +74,45 @@
           </div>
 
           <!-- Repeat for more items -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm h-100">
-              <div class="row g-0">
-                <div class="col-6">
-                  <img src="images/before2.jpg" class="img-fluid rounded-start" alt="Before tailoring">
-                  <div class="text-center small mt-2">Before</div>
-                </div>
-                <div class="col-6">
-                  <img src="images/after2.jpg" class="img-fluid rounded-end" alt="After tailoring">
-                  <div class="text-center small mt-2">After</div>
-                </div>
-              </div>
+         <div class="col-md-6 col-lg-6">
+    <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+        <div class="before-after-slider">
+
+            <!-- Before Image -->
+            <img src="images/20250905_101207 (1).jpg"
+                 alt="Before alteration"
+                 class="before-image">
+
+            <!-- After Image -->
+            <div class="after-wrapper">
+                <img src="images/20250905_120134.jpg"
+                     alt="After alteration"
+                     class="after-image">
             </div>
-          </div>
+
+            <!-- Labels -->
+            <span class="before-label">Before</span>
+            <span class="after-label">After</span>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Slider -->
+            <input type="range"
+                   min="0"
+                   max="100"
+                   value="50"
+                   class="slider">
+        </div>
+
+        <div class="card-body text-center">
+            <h5 class="mb-1">Dress Alteration</h5>
+            <p class="text-muted mb-0">
+                Drag the slider to compare the transformation.
+            </p>
+        </div>
+    </div>
+</div>
 
           <!-- Add more as needed -->
         </div>
