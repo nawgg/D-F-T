@@ -1,370 +1,254 @@
-    <!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" helf="image/favicon.jpg" type="image/jpeg">
-    <title>D&F TAILORING EXPERTS </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet"          href="css/stayle.css">
-    <link rel="icon" href="images/favicon-96x96.png" type="image/png">
-  </head>
-  <body  class="pt-5">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D&amp;F Tailoring Experts — Victoria, BC | Bridal, Alterations &amp; Custom Sewing</title>
+<meta name="description" content="D&F Tailoring Experts in Victoria, BC. Bridal alterations, clothing alterations, custom sewing, zipper repair and dry cleaning. Visit us at 543 Herald St.">
+<style>
+ :root{--burgundy:#5c1a24;--burgundy2:#7a2432;--cream:#faf6ef;--gold:#c9a86a;--ink:#222;--muted:#666}
+ *{box-sizing:border-box} body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:var(--cream);line-height:1.6}
+ a{color:var(--burgundy)} header{background:var(--burgundy);color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;position:sticky;top:0;z-index:10}
+ header b{font-size:22px;letter-spacing:1px} nav a{color:#fff;text-decoration:none;margin:0 10px;font-family:Arial,sans-serif;font-size:15px}
+ nav a:hover{text-decoration:underline}
+ .hero{background:linear-gradient(135deg,var(--burgundy),var(--burgundy2));color:#fff;text-align:center;padding:64px 20px}
+ .hero h1{font-size:44px;margin:0 0 8px} .hero p{font-size:19px;opacity:.95;max-width:640px;margin:10px auto}
+ .btn{display:inline-block;background:var(--gold);color:#1c1c1c;text-decoration:none;padding:13px 26px;border-radius:30px;font-family:Arial,sans-serif;font-weight:bold;margin:8px 6px}
+ .btn.outline{background:transparent;color:#fff;border:2px solid #fff}
+ section{max-width:1080px;margin:0 auto;padding:52px 20px} h2{text-align:center;font-size:32px;color:var(--burgundy);margin-bottom:6px}
+ .sub{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 30px}
+ .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+ .card{background:#fff;border:1px solid #e8ddc9;border-radius:14px;padding:22px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+ .card h3{margin-top:0;color:var(--burgundy)} .price{font-family:Arial,sans-serif;font-weight:bold;font-size:20px;color:var(--burgundy2)}
+ .bridal{background:#fff;border:3px solid var(--gold);border-radius:18px;padding:34px}
+ .bridal ul{columns:2;gap:30px} @media(max-width:600px){.bridal ul{columns:1}.hero h1{font-size:32px}}
+ .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+ .ph{background:#e9dfc9;border-radius:12px;height:200px;display:flex;align-items:center;justify-content:center;color:#7a6a4a;font-family:Arial,sans-serif;text-align:center;padding:16px}
+ .contact{background:var(--burgundy);color:#fff;border-radius:18px;padding:34px}
+ .contact h2{color:#fff} .contact a{color:#ffd9a0}
+ form{display:grid;gap:12px;max-width:520px;margin:20px auto 0} input,textarea,select{padding:12px;border-radius:8px;border:1px solid #ccc;font-size:16px;width:100%}
+ button{cursor:pointer} footer{background:#1c1c1c;color:#ccc;text-align:center;padding:24px;font-family:Arial,sans-serif;font-size:14px}
+ footer a{color:#fff}
 
-    
+ .ba-slider{position:relative;max-width:720px;margin:0 auto 24px;overflow:hidden;border-radius:14px;border:1px solid #e8ddc9;aspect-ratio:8/5;touch-action:none;cursor:ew-resize;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+ .ba-slider img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;-webkit-user-drag:none;user-drag:none}
+ .ba-after{clip-path:inset(0 0 0 50%)}
+ .ba-handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:rgba(255,255,255,.95);transform:translateX(-50%);box-shadow:0 0 6px rgba(0,0,0,.25)}
+ .ba-knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:#fff;color:#5c1a24;border:2px solid #c9a86a;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:bold;font-family:Arial,sans-serif;box-shadow:0 1px 6px rgba(0,0,0,.25)}
+ .ba-tag{position:absolute;top:12px;padding:6px 12px;border-radius:20px;background:rgba(0,0,0,.6);color:#fff;font-family:Arial,sans-serif;font-size:13px;font-weight:bold}
+ .ba-tag.before{left:12px} .ba-tag.after{right:12px}
+ .ba-range{width:100%;max-width:720px;display:block;margin:0 auto}
+ .brand{display:flex;align-items:center;gap:12px} .site-logo{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid #c9a86a;background:#fff}
 
-    <main class="container pt-5">
-    
-        <nav class="navbar navbar-expand-lg navbar-dark  fixed-top">
-            <div class="container">
-                <!-- Logo Section -->
-                <div class="logo  navbar-brand" href="#">
-                    <span class="first-name">D &</span>
-                    <span class="last-name">F</span>
-                </div>      
-        
-                <!-- Mobile Toggle Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        
-                <!-- Navbar Links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                   <ul class="navbar-nav ms-auto">
-                      <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#resume">Our services</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#portfolio">Pricing</a></li>
-                      <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
+  /* Elegant shapes instead of emojis: gold diamonds + gold rule under headings */
+  .diamond-ornament{display:flex;align-items:center;justify-content:center;gap:10px;margin:0 auto 20px}
+  .diamond-ornament::before,.diamond-ornament::after{content:"";height:1px;width:60px;background:#c9a86a}
+  .diamond-ornament i{display:block;width:10px;height:10px;background:#c9a86a;transform:rotate(45deg);border:1px solid #5c1a24}
+  .card h3::before{content:"";display:inline-block;width:9px;height:9px;background:#c9a86a;transform:rotate(45deg);margin-right:9px;vertical-align:middle}
+  .cover-logo{width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid #c9a86a;display:block;margin:0 auto 18px;box-shadow:0 6px 20px rgba(0,0,0,.3);background:#f3ead8}
+</style>
+</head>
+<body>
+<header>
+ <span class="brand"><img class="site-logo" src="logo.jpg" alt="D&F Tailoring Experts logo" onerror="this.style.display='none'"><b>D&amp;F TAILORING EXPERTS</b></span>
+ <nav>
+ <a href="#about">About Us</a><a href="#services">Services</a><a href="bridal.html">Bridal</a><a href="#pricing">Pricing</a><a href="#gallery">Gallery</a><a href="#testimonials">Reviews</a><a href="#contact">Contact</a>
+ </nav>
+</header>
 
-                </div>
-            </div>
-        </nav>
-        
-    
-      <!-- Hero Section -->
-        <section id="hero" class="px-4 py-5 hero-full-height">
-            <div class="container-fluid main-section overflow-hidden">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <!-- Left Content -->
-                        <div class="col-md-6">
-                            <div class="banner-left">
-                                <h2>D&F</h2>
-                                <h3 class="typing">TAILORING EXPERTS</h3>
-                              <h1>Visit us at our store at 543 Herald St,Victoria, BC</h1>
-                                <p>
-                                    Passionate about giving you the best fit.
-                                </p>
-                                <a class="btn  banner-btn btn-lg px-4" href="#contact">Contact</a>
+<div class="hero">
+  <img class="cover-logo" src="logo.jpg" alt="D&F Tailoring Experts logo">
+ <h1>The Perfect Fit, Every Time</h1>
+ <p>Expert tailoring in Victoria, BC — from everyday repairs to your wedding day.</p>
+ <p><strong>Visit us at 543 Herald St, Victoria, BC</strong></p>
+ <a class="btn" href="tel:+12368821539">Call 236-882-1539</a>
+ <a class="btn outline" href="#contact">Book an Appointment</a>
+</div>
 
-                            </div>
-                        </div>
-                        <!-- Right Circle -->
-                        <div class="col-md-6 d-flex justify-content-center">
-                            <div class="circle-container">
-                                <img src="images/IMG-20250626-WA0005.jpg" alt="Your Profile" class="circle-image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<section id="about">
+ <h2>About Us</h2>
+  <div class="diamond-ornament" aria-hidden="true"><i></i></div>
+ <p class="sub">With many years of experience in the tailoring industry, D&amp;F brings quality, attention to detail, and genuine care to every garment. Since coming to Vancouver Island, we have loved becoming part of the community — and helping every customer look and feel their best.</p>
+</section>
 
+<section id="services">
+ <h2>Our Services</h2>
+  <div class="diamond-ornament" aria-hidden="true"><i></i></div>
+ <p class="sub">Precision work, treated with care — no matter the occasion.</p>
+ <div class="grid">
+ <div class="card"><h3> Clothing Alterations</h3><p>Hemming, taking in or letting out, resizing and reshaping — a fit made for you.</p></div>
+ <div class="card"><h3> Bridal Alterations</h3><p>See our dedicated Bridal page — fittings, bustles and finishing touches for your big day.</p></div>
+ <div class="card"><h3> Zipper Replacements &amp; Repairs</h3><p>Jackets, dresses, bags and more — fixed properly.</p></div>
+ <div class="card"><h3> Steaming</h3><p>Crisp, fresh and event-ready garments.</p></div>
+ <div class="card"><h3> Custom Sewing</h3><p>Made-to-measure pieces and modern fashion tailoring. Price on inquiry.</p></div>
+ <div class="card"><h3> Dry Cleaning</h3><p>Careful cleaning for delicate and everyday pieces.</p></div>
+ <div class="card"><h3> Delivery Services</h3><p>Local delivery available — ask us for details and coverage.</p></div>
+ <div class="card"><h3> Latest Fashion</h3><p>Modern tailoring and wardrobe updates to keep your style current.</p></div>
+ </div>
+</section>
 
-        <section id="about" class="py-5 text-center">
-            <div class="container">
-                <h2 class="mb-4">About us</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-4 mb-4">
-                        <p>
-                             Welcome to D&F – Tailoring Experts.
-                             <br>
+<section id="bridal-teaser">
+ <div class="bridal">
+ <h2> Bridal Alterations</h2>
+  <div class="diamond-ornament" aria-hidden="true"><i></i></div>
+ <p class="sub">Your wedding dress, fitted perfectly — fittings, hemming, bustles and finishing touches for your big day. .</p>
+ <p style="text-align:center"><a class="btn" href="bridal.html">See the Bridal Page →</a></p>
+ </div>
+</section>
 
-                   At D&F, we’ve spent many years perfecting our craft in the tailoring industry. We're proud to bring that experience and care to every piece we work on. For us, it's all about quality, attention to detail, and making sure each customer feels valued. Since coming to Vancouver Island, we've loved becoming part of the community and sharing our passion for expert tailoring with our clients here.                        </p>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <p>
-                          From bridal alterations to modern fashion tailoring and everyday repairs, we’re passionate about helping you look and feel your best. Our skilled team treats each garment with precision and care, ensuring a perfect fit tailored to your unique style.
-                        </p>
-                    </div>
+<section id="pricing">
+ <h2>Sewing Services &amp; Pricing</h2>
+  <div class="diamond-ornament" aria-hidden="true"><i></i></div>
+ <p class="sub">All prices in CAD. "From" prices are starting prices — your exact quote depends on the garment and the work.</p>
+ <div class="grid">
+ <div class="card"><h3>Alterations</h3><p class="price">From CAD $10</p></div>
+ <div class="card"><h3>Zipper Repair</h3><p class="price">From CAD $18</p></div>
+ <div class="card"><h3>Bridal Alterations</h3><p class="price">Price on inquiry</p></div>
+ <div class="card"><h3>Dry Cleaning</h3><p class="price">From CAD $15</p></div>
+ <div class="card"><h3>Delivery Services</h3><p class="price">CAD $10 – $25</p></div>
+ <div class="card"><h3>Custom Sewing</h3><p>Price on inquiry — <a href="#contact">get a quote</a></p></div>
+ </div>
+</section>
 
-                    <div class="col-md-4 mb-4">
-                        <p>
-                          Whether you need a quick zipper replacement, or a complete wardrobe update, we’re here to help. Our mission is to make sure you feel confident and comfortable—no matter the occasion.
-
-                        </p>
-                    </div>
-
-                    <div class="col-md-4 mb-4">
-                        <p>
-                          Have a question? We’re always happy to help you. Let D&F help you achieve the perfect fit.
-                          
-                        </p>
-                    </div>
-
-                    <div class="col-md-4 mb-4">
-                        <p>
-                          Thank you for choosing D&F Tailoring Experts. We look forward to working with you!
-                          
-                        </p>
-                    </div>
-                    
-                    
-                </div>
-                <blockquote class="blockquote mt-4">
-                    “Transform your Wardobe here” – D&F Tailoring Experts Awaits!
-                </blockquote>
-            </div>
-        </section>
-        
-   
-
-        <section id="resume" class="py-5">
-            <div class="container">
-                <h2 class="text-center mb-5">D&F</h2>
-        
-                <!-- Skills Section -->
-                <div class="mb-5">
-                    <h3 class="mb-3">our service</h3>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><strong>Latest fashion</strong></li>
-                                
-                                <li class="list-group-item"><strong>Bridal alterations</strong></li>
-                                
-                                <li class="list-group-item"><strong> Zipper replacements</strong></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><strong>Steaming</strong></li>
-
-                                <li class="list-group-item"><strong>All kind of alterations</strong></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        
-             
-        
-                
-                    
-                 
-        </section>
-
-
-
-      
-
-     <!-- Pricing Section -->
-<section id="portfolio" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Sewing Services & Pricing</h2>
-    <p class="text-center mb-5">Affordable, high-quality sewing and garment care services tailored to your needs.</p>
-
-    <div class="row">
-      <!-- Alterations -->
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <h5 class="card-title">Alterations</h5>
-            <h6 class="card-price text-primary mb-3">From $10</h6>
-            <p class="card-text">
-              Shortening, hemming, adjusting sizes, fixing sleeves, replacing zippers, and more.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Custom Sewing -->
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm ">
-          <div class="card-body text-center">
-            <h5 class="card-title">Custom Sewing</h5>
-            <h6 class="card-price text-primary mb-3">Must inquire</h6>
-            <p class="card-text">
-              Handmade dresses, shirts, pants, skirts, home decor items, and fabric accessories.
-            </p>
-            <a href="#contact" class="btn banner-btn  mt-3">Get a Quote</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Zipper Repair & Replacement -->
-      <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <h5 class="card-title">Zipper Repair</h5>
-            <h6 class="card-price text-primary mb-3"> from $18</h6>
-            <p class="card-text">
-              Fix broken zippers or fully replace them on jackets, dresses, pants, and bags.
-            </p>
-            <a href="#contact" class="btn banner-btn mt-3">Fix Now</a>
-          </div>
-        </div>
-      </div>
-
-      
-
-     <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <h5 class="card-title">Bridal alterations</h5>
-            <h6 class="card-price text-primary mb-3"> from $35</h6>
-            <p class="card-text">
-              Shortening, lengthening, narrowing, and much  more
-            </p>
-            <a href="#contact" class="btn banner-btn mt-3">Fix Now</a>
-          </div>
-        </div>
-      </div>
-
-         <!-- Dry Cleaning -->
-        <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <h5 class="card-title">Dry Cleaning</h5>
-              <h6 class="card-price text-primary mb-3">From $15</h6>
-              <p class="card-text">
-                Professional dry cleaning for suits, dresses, coats, and delicate fabrics.
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-       <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <h5 class="card-title">Delivery services </h5>
-            <h6 class="card-price text-primary mb-3"> from $10-$25</h6>
-            <p class="card-text">
-              All that matters for us is our clients convenience, so deliveries are now available.
-            </p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <h5 class="card-title">Embroidery  </h5>
-            <h6 class="card-price text-primary mb-3"> </h6>
-            <p class="card-text">
-              coming soon.....
-            </p>
-          </div>
-        </div>
-      </div>
-
-       <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body text-center">
-            <h5 class="card-title">Party wear Rentals </h5>
-            <h6 class="card-price text-primary mb-3"> </h6>
-            <p class="card-text">
-             Party Wear Rentals – Coming Soon! 
-            </p>
-          </div>
-        </div>
-      </div>
-  </div>
+<section id="testimonials">
+ <h2>What Our Customers Say</h2>
+  <div class="diamond-ornament" aria-hidden="true"><i></i></div>
+ <p class="sub">⭐ 4.9 out of 5 on Google</p>
+ <div class="grid">
+ <div class="card"><p>⭐⭐⭐⭐⭐</p><p><em>"Excellent shop! They got my pants hemmed within a few hours… It was a very quick streamlined process. HIGHLY recommend"</em></p><p><strong>— Carley, Google review</strong></p></div>
+ <div class="card"><p>⭐⭐⭐⭐⭐</p><p><em>"I would give six stars if I could… I'm thrilled to have found a tailor that does such good work. Thanks so much, D&amp;F team!"</em></p><p><strong>— Quinn, Google review</strong></p></div>
+ <div class="card"><p>⭐⭐⭐⭐⭐</p><p><em>"Absolutely amazing customer service and great prices! I stopped in to get a pair of pants hemmed and they had it done in 5 minutes… I highly recommend them!"</em></p><p><strong>— Jennifer, Google review</strong></p></div>
+ </div>
+ <p style="text-align:center">See all reviews on <a href="https://www.google.com/maps/search/D%26F+Tailoring+Experts+543+Herald+St+Victoria+BC" target="_blank" rel="noopener">Google Maps</a> · Had a great experience? <a href="#contact">Tell us</a> and we will feature your review here.</p>
 </section>
 
 
- 
+<section id="instagram">
+  <h2>From Our Instagram</h2>
+  <div class="diamond-ornament" aria-hidden="true"><i></i></div>
+  <p class="sub">Real work from <a href="https://www.instagram.com/df_tailoring_experts" target="_blank" rel="noopener">@df_tailoring_experts</a> — most praised by customers: quick turnaround, pants hemming, zipper replacement, and professional, caring service.</p>
+  <div style="max-width:520px;margin:0 auto;text-align:center">
+    <img src="images/instagram-redesigning.jpg" alt="Redesigning before and after — red patterned garment" style="width:100%;max-width:520px;border-radius:14px;border:1px solid #e8ddc9">
+    <p><strong>Redesigning — Before / After</strong><br><span style="color:var(--muted)">From our Instagram "Redesigning" highlight. Small thumbnail from Instagram — a larger version will replace it when available.</span></p>
+  </div>
+</section>
 
-         <!-- Contact Section -->
+<section id="gallery">
+ <h2>Before &amp; After Gallery</h2>
+  <div class="diamond-ornament" aria-hidden="true"><i></i></div>
+ <p class="sub">Real work, real transformations. (Photo placeholders — replace with your own before/after photos.)</p>
+ <h3 style="text-align:center;color:var(--burgundy)">Dress Alteration</h3>
+ <!-- BEFORE/AFTER SLIDER: to use real photos, replace the two img src values below with your before.jpg and after.jpg files -->
+ <div class="ba-slider" id="baSlider">
+ <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%23d9d2c4%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EBEFORE%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="Before alteration">
+ <img class="ba-after" id="baAfter" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%235c1a24%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAFTER%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="After alteration">
+ <span class="ba-tag before">BEFORE</span><span class="ba-tag after">AFTER</span>
+ <div class="ba-handle" id="baHandle"><div class="ba-knob">↔</div></div>
+ </div>
+ <p style="text-align:center;color:var(--muted)">Drag the line left and right to compare before and after.</p>
+<div style="max-width:720px;margin:0 auto 32px">
+ <h3 style="text-align:center;color:var(--burgundy)">Bridal Fitting</h3>
+ <div class="ba-slider">
+ <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%23d9d2c4%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EBEFORE%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="Before alteration">
+ <img class="ba-after" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%235c1a24%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAFTER%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="After alteration">
+ <span class="ba-tag before">BEFORE</span><span class="ba-tag after">AFTER</span>
+ <div class="ba-handle"><div class="ba-knob">↔</div></div>
+ </div>
+ </div><div style="max-width:720px;margin:0 auto 32px">
+ <h3 style="text-align:center;color:var(--burgundy)">Trouser Hemming</h3>
+ <div class="ba-slider">
+ <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%23d9d2c4%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EBEFORE%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="Before alteration">
+ <img class="ba-after" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%235c1a24%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAFTER%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="After alteration">
+ <span class="ba-tag before">BEFORE</span><span class="ba-tag after">AFTER</span>
+ <div class="ba-handle"><div class="ba-knob">↔</div></div>
+ </div>
+ </div>
+  <div style="max-width:420px;margin:0 auto 32px;text-align:center">
+    <h3 style="color:var(--burgundy)">Real Customer: Kuni's Trousers — Before / After</h3>
+    <div class="ba-slider" style="aspect-ratio:9/16;max-width:420px">
+      <img src="images/kuni-trousers-before.jpg" alt="Kuni's trousers before tailoring — waist not closing" style="object-position:top center">
+      <img class="ba-after" src="images/kuni-trousers-after.jpg" alt="Kuni's trousers after tailoring — fitting perfectly" style="object-position:top center">
+      <span class="ba-tag before">BEFORE</span><span class="ba-tag after">AFTER</span>
+      <div class="ba-handle"><div class="ba-knob">↔</div></div>
+    </div>
+  </div>
+  </div>
+<p style="text-align:center">Real customer before/after: <a href="https://www.instagram.com/kuni_fitcheck/reel/DRiK3Qgk8dG/" target="_blank" rel="noopener">Watch Kuni's trousers reel on Instagram</a> — his wool dress trousers didn't even close before tailoring, and now they fit perfectly.</p>
+  <div style="max-width:720px;margin:0 auto 32px">
+ <h3 style="text-align:center;color:var(--burgundy)">Zipper Repair</h3>
+ <div class="ba-slider">
+ <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%23d9d2c4%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EBEFORE%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="Before alteration">
+ <img class="ba-after" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%235c1a24%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAFTER%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="After alteration">
+ <span class="ba-tag before">BEFORE</span><span class="ba-tag after">AFTER</span>
+ <div class="ba-handle"><div class="ba-knob">↔</div></div>
+ </div>
+ </div>
+ </div>
+</section>
+
 <section id="contact">
-  <div class="container">
-    <h2 class="text-center mb-4">Get in Touch</h2>
-    <p class="text-center mb-5">Feel free to reach out for collaborations or inquiries.</p>
-
-    <!-- Contact Form -->
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <form action="https://formsubmit.co/dftailoringexperts@gmail.com" method="POST">
-           <input type="hidden" name="_captcha" value="false">
+ <div class="contact">
+ <h2>Get in Touch</h2>
+  <div class="diamond-ornament" aria-hidden="true"><i></i></div>
+ <p style="text-align:center"> 543 Herald St, Victoria, BC &nbsp;|&nbsp; <a href="tel:+12368821539">236-882-1539</a> &nbsp;|&nbsp; <a href="mailto:dftailoringexperts@gmail.com">dftailoringexperts@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.instagram.com/df_tailoring_experts" target="_blank" rel="noopener">@df_tailoring_experts</a></p>
+ <p style="text-align:center"><strong>Working Hours:</strong><br>
+ Monday – Thursday: 9:00 AM – 6:00 PM<br>
+ Friday: 9:00 AM – 6:00 PM (midday break 12:00 PM – 3:00 PM — Fridays only please confirm before visiting)<br>
+ Saturday: 9:00 AM – 5:00 PM<br>
+ Sunday: Closed</p>
+ <form action="https://formsubmit.co/dftailoringexperts@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_next" value="https://df-tailoring-experts.com/thank-you.html">
-
-
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea name="message" class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
-          </div>
-
-          <!-- Optional thank you page -->
-          <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html"> -->
-
-          <button type="submit" class="btn btn-primary w-100">Send Message</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- Social Media Links -->
-    <div class="text-center mt-5">
-      <a href="https://www.instagram.com/df_tailoring_experts?igsh=N3lqZ2R5eTVubnFhhttps://www.instagram.com/df_tailoring_experts?igsh=N3lqZ2R5eTVubnFh" class="btn btn-outline-dark mx-2 social-link" target="_blank">
-        <i class="bi bi-instagram"></i> Instagram
-      </a>
-      <a href="mailto:dftailoringexperts@gmail.com" class="btn btn-outline-dark mx-2 social-link">
-        <i class="bi bi-envelope"></i> Email
-      </a>
-    </div>
-
-    <!-- Contact Info -->
-    <div class="text-center mt-4">
-      <p>Phone: <span class="highlight">236-882-1539</span></p>
-      <p>Email: <span class="highlight">dftailoringexperts@gmail.com</span></p>
-    </div>
-        <!-- Working Hours -->
-      <h5 class="mt-4">Working Hours</h5>
-      <p>Monday – Thursday : 09:00 AM – 6:00 PM</p>
-      <p>Friday: 09:00 AM – 06:00 PM   close: 12:00pm - 3:00pm </p>
-      <p>saturday: 09:00am-05:00pm </p>
-      <p>Sunday : Close</p>
-  </div>
+ <input type="text" placeholder="Your Name *" required>
+ <input type="email" placeholder="Your Email *" required>
+ <select><option>What do you need help with?</option><option>Bridal alteration</option><option>General alteration</option><option>Zipper repair</option><option>Custom sewing</option><option>Dry cleaning</option><option>Other</option></select>
+ <textarea rows="4" placeholder="Your Message * — tell us about the garment and when you need it" required></textarea>
+ <button class="btn" type="submit">Send Message</button>
+ </form>
+ <p style="text-align:center;font-size:14px;opacity:.85">Note: this prototype form does not send yet — connect it to your email on the live site.</p>
+ </div>
 </section>
 
-
-       
-
-    </main>
-
-
-
-<!-- Footer -->
 <footer>
-    <div class="container text-center">
-        <!-- Social Media Links -->
-       
-        <p class="mb-0 text-muted">&copy; 2025 D&F TAILORING EXPERTS. All Rights Reserved.</p>
-        <p class="mb-0"><em>WE WORK WITH LOVE!<em></p>
-    </div>
+ <p>© 2026 D&amp;F Tailoring Experts. All Rights Reserved. — We work with love!</p>
+ <p><a href="#about">About</a> · <a href="#services">Services</a> · <a href="bridal.html">Bridal</a> · <a href="#pricing">Pricing</a> · <a href="#testimonials">Reviews</a> · <a href="#contact">Contact</a><br>
+ 543 Herald St, Victoria, BC · 236-882-1539 · dftailoringexperts@gmail.com</p>
 </footer>
 
-
-  
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-
-  </body>
+<script>
+document.querySelectorAll('.ba-slider').forEach(function(slider){
+ var after=slider.querySelector('.ba-after'), handle=slider.querySelector('.ba-handle'),
+ range=slider.parentElement.querySelector('.ba-range');
+ slider.querySelectorAll('img').forEach(function(im){ im.setAttribute('draggable','false'); });
+ function setPos(pct){ pct=Math.max(0,Math.min(100,pct)); after.style.clipPath='inset(0 0 0 '+pct+'%)'; handle.style.left=pct+'%'; if(range) range.value=pct; }
+ if(range) range.addEventListener('input', function(){ setPos(this.value); });
+ // Tap fallback for phones: BEFORE / AFTER buttons under each slider, in case dragging feels stuck
+ var btnWrap=document.createElement('div');
+ btnWrap.style.cssText='display:flex;gap:10px;justify-content:center;margin:10px auto 24px';
+ var bBefore=document.createElement('button'); bBefore.type='button'; bBefore.textContent='BEFORE';
+ var bAfter=document.createElement('button'); bAfter.type='button'; bAfter.textContent='AFTER';
+ [bBefore,bAfter].forEach(function(b){ b.style.cssText='padding:10px 20px;border-radius:20px;border:1px solid #c9a86a;background:#fff;color:#5c1a24;font-weight:bold;cursor:pointer'; });
+ bBefore.addEventListener('click', function(){ setPos(0); });
+ bAfter.addEventListener('click', function(){ setPos(100); });
+ btnWrap.appendChild(bBefore); btnWrap.appendChild(bAfter);
+ slider.parentNode.insertBefore(btnWrap, slider.nextSibling);
+ var dragging=false;
+ function clientX(e){ if(e.touches&&e.touches.length) return e.touches[0].clientX; if(e.changedTouches&&e.changedTouches.length) return e.changedTouches[0].clientX; return e.clientX; }
+ function fromEvent(e){ var r=slider.getBoundingClientRect(); setPos((clientX(e)-r.left)/r.width*100); }
+ function start(e){ dragging=true; fromEvent(e); if(e.cancelable) e.preventDefault(); }
+ function move(e){ if(!dragging) return; fromEvent(e); if(e.cancelable) e.preventDefault(); }
+ function end(){ dragging=false; }
+ // Pointer events: cover modern phone + laptop + desktop in one API
+ slider.addEventListener('pointerdown', function(e){ dragging=true; try{ slider.setPointerCapture(e.pointerId); }catch(err){} fromEvent(e); });
+ slider.addEventListener('pointermove', function(e){ if(dragging) fromEvent(e); });
+ slider.addEventListener('pointerup', end); slider.addEventListener('pointercancel', end);
+ // Fallbacks for older browsers without Pointer Events
+ slider.addEventListener('mousedown', start);
+ window.addEventListener('mousemove', move); window.addEventListener('mouseup', end);
+ slider.addEventListener('touchstart', start, {passive:false});
+ slider.addEventListener('touchmove', move, {passive:false});
+ slider.addEventListener('touchend', end); slider.addEventListener('touchcancel', end);
+ setPos(50);
+});
+</script></body>
 </html>
-
-
-
-
-
-
