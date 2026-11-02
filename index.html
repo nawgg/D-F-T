@@ -46,6 +46,10 @@
   .diamond-ornament i{display:block;width:10px;height:10px;background:#c9a86a;transform:rotate(45deg);border:1px solid #5c1a24}
   .card h3::before{content:"";display:inline-block;width:9px;height:9px;background:#c9a86a;transform:rotate(45deg);margin-right:9px;vertical-align:middle}
   .cover-logo{width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid #c9a86a;display:block;margin:0 auto 18px;box-shadow:0 6px 20px rgba(0,0,0,.3);background:#f3ead8}
+
+  /* Faint logo watermark across the page background */
+  body::before{content:"";position:fixed;inset:0;background:url('images/logo-watermark.png') center top 120px / 620px auto no-repeat;opacity:.06;pointer-events:none;z-index:0}
+  header,section,footer{position:relative;z-index:1}
 </style>
 </head>
 <body>
@@ -78,7 +82,7 @@
  <div class="grid">
  <div class="card"><h3> Clothing Alterations</h3><p>Hemming, taking in or letting out, resizing and reshaping — a fit made for you.</p></div>
  <div class="card"><h3> Bridal Alterations</h3><p>See our dedicated Bridal page — fittings, bustles and finishing touches for your big day.</p></div>
- <div class="card"><h3> Zipper Replacements &amp; Repairs</h3><p>Jackets, dresses, bags and more — fixed properly.</p></div>
+ <div class="card"><h3> Zipper Replacements &amp; Repairs</h3><p>Jackets, dresses, bags and more — fixed properly, not just patched.</p></div>
  <div class="card"><h3> Steaming</h3><p>Crisp, fresh and event-ready garments.</p></div>
  <div class="card"><h3> Custom Sewing</h3><p>Made-to-measure pieces and modern fashion tailoring. Price on inquiry.</p></div>
  <div class="card"><h3> Dry Cleaning</h3><p>Careful cleaning for delicate and everyday pieces.</p></div>
@@ -91,7 +95,7 @@
  <div class="bridal">
  <h2> Bridal Alterations</h2>
   <div class="diamond-ornament" aria-hidden="true"><i></i></div>
- <p class="sub">Your wedding dress, fitted perfectly — fittings, hemming, bustles and finishing touches for your big day. .</p>
+ <p class="sub">Your wedding dress, fitted perfectly — fittings, hemming, bustles and finishing touches for your big day. Bridal alterations from CAD $35.</p>
  <p style="text-align:center"><a class="btn" href="bridal.html">See the Bridal Page →</a></p>
  </div>
 </section>
@@ -113,7 +117,7 @@
 <section id="testimonials">
  <h2>What Our Customers Say</h2>
   <div class="diamond-ornament" aria-hidden="true"><i></i></div>
- <p class="sub">⭐ 4.9 out of 5 on Google</p>
+ <p class="sub">⭐ 4.9 out of 5 on Google </p>
  <div class="grid">
  <div class="card"><p>⭐⭐⭐⭐⭐</p><p><em>"Excellent shop! They got my pants hemmed within a few hours… It was a very quick streamlined process. HIGHLY recommend"</em></p><p><strong>— Carley, Google review</strong></p></div>
  <div class="card"><p>⭐⭐⭐⭐⭐</p><p><em>"I would give six stars if I could… I'm thrilled to have found a tailor that does such good work. Thanks so much, D&amp;F team!"</em></p><p><strong>— Quinn, Google review</strong></p></div>
@@ -136,32 +140,25 @@
 <section id="gallery">
  <h2>Before &amp; After Gallery</h2>
   <div class="diamond-ornament" aria-hidden="true"><i></i></div>
- <p class="sub">Real work, real transformations. (Photo placeholders — replace with your own before/after photos.)</p>
- <h3 style="text-align:center;color:var(--burgundy)">Dress Alteration</h3>
+ <p class="sub">Real work, real transformations — photos from the shop, November 2026.</p>
+ <h3 style="text-align:center;color:var(--burgundy)">Military Jacket — Before / After</h3>
  <!-- BEFORE/AFTER SLIDER: to use real photos, replace the two img src values below with your before.jpg and after.jpg files -->
- <div class="ba-slider" id="baSlider">
- <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%23d9d2c4%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EBEFORE%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="Before alteration">
- <img class="ba-after" id="baAfter" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%235c1a24%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAFTER%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="After alteration">
+ <div class="ba-slider" id="baSlider" style="aspect-ratio:3/4;max-width:420px">
+ <img src="images/new/military-jacket-before.jpg" alt="Before alteration">
+ <img class="ba-after" id="baAfter" src="images/new/military-jacket-after.jpg" alt="After alteration">
  <span class="ba-tag before">BEFORE</span><span class="ba-tag after">AFTER</span>
  <div class="ba-handle" id="baHandle"><div class="ba-knob">↔</div></div>
  </div>
  <p style="text-align:center;color:var(--muted)">Drag the line left and right to compare before and after.</p>
 <div style="max-width:720px;margin:0 auto 32px">
- <h3 style="text-align:center;color:var(--burgundy)">Bridal Fitting</h3>
+ <h3 style="text-align:center;color:var(--burgundy)">Striped Jacket — Cuff Repair, Before / After</h3>
  <div class="ba-slider">
- <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%23d9d2c4%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EBEFORE%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="Before alteration">
- <img class="ba-after" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%235c1a24%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAFTER%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="After alteration">
+ <img src="images/new/striped-jacket-before.jpg" alt="Before alteration">
+ <img class="ba-after" src="images/new/striped-jacket-after.jpg" alt="After alteration">
  <span class="ba-tag before">BEFORE</span><span class="ba-tag after">AFTER</span>
  <div class="ba-handle"><div class="ba-knob">↔</div></div>
  </div>
- </div><div style="max-width:720px;margin:0 auto 32px">
- <h3 style="text-align:center;color:var(--burgundy)">Trouser Hemming</h3>
- <div class="ba-slider">
- <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%23d9d2c4%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EBEFORE%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="Before alteration">
- <img class="ba-after" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%235c1a24%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAFTER%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="After alteration">
- <span class="ba-tag before">BEFORE</span><span class="ba-tag after">AFTER</span>
- <div class="ba-handle"><div class="ba-knob">↔</div></div>
- </div>
+ 
  </div>
   <div style="max-width:420px;margin:0 auto 32px;text-align:center">
     <h3 style="color:var(--burgundy)">Real Customer: Kuni's Trousers — Before / After</h3>
@@ -173,14 +170,17 @@
     </div>
   </div>
   </div>
+
+  <div style="max-width:720px;margin:0 auto 32px;text-align:center">
+    <h3 style="color:var(--burgundy)">More Recent Work</h3>
+    <div class="gallery">
+      <figure style="margin:0"><img src="images/new/leather-vest.jpg" alt="Black leather vest" style="width:100%;border-radius:14px;border:1px solid #e8ddc9"><figcaption>Black leather vest</figcaption></figure>
+      <figure style="margin:0"><img src="images/new/shop-front.jpg" alt="Shop front with colourful thread spools" style="width:100%;border-radius:14px;border:1px solid #e8ddc9"><figcaption>Our shop front — walk-ins welcome</figcaption></figure>
+    </div>
+  </div>
 <p style="text-align:center">Real customer before/after: <a href="https://www.instagram.com/kuni_fitcheck/reel/DRiK3Qgk8dG/" target="_blank" rel="noopener">Watch Kuni's trousers reel on Instagram</a> — his wool dress trousers didn't even close before tailoring, and now they fit perfectly.</p>
   <div style="max-width:720px;margin:0 auto 32px">
- <h3 style="text-align:center;color:var(--burgundy)">Zipper Repair</h3>
- <div class="ba-slider">
- <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%23d9d2c4%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EBEFORE%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%235c1a24%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="Before alteration">
- <img class="ba-after" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22800%22%20height%3D%22500%22%3E%3Crect%20width%3D%22800%22%20height%3D%22500%22%20fill%3D%22%235c1a24%22/%3E%3Ctext%20x%3D%22400%22%20y%3D%22250%22%20font-family%3D%22Arial%22%20font-size%3D%2248%22%20font-weight%3D%22bold%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAFTER%3C/text%3E%3Ctext%20x%3D%22400%22%20y%3D%22300%22%20font-family%3D%22Arial%22%20font-size%3D%2222%22%20fill%3D%22%23faf6ef%22%20text-anchor%3D%22middle%22%3EAdd%20your%20real%20photo%20here%3C/text%3E%3C/svg%3E" alt="After alteration">
- <span class="ba-tag before">BEFORE</span><span class="ba-tag after">AFTER</span>
- <div class="ba-handle"><div class="ba-knob">↔</div></div>
+ 
  </div>
  </div>
  </div>
@@ -196,16 +196,13 @@
  Friday: 9:00 AM – 6:00 PM (midday break 12:00 PM – 3:00 PM — Fridays only please confirm before visiting)<br>
  Saturday: 9:00 AM – 5:00 PM<br>
  Sunday: Closed</p>
- <form action="https://formsubmit.co/dftailoringexperts@gmail.com" method="POST">
-  <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://df-tailoring-experts.com/thank-you.html">
- <input type="text" placeholder="Your Name *" required>
- <input type="email" placeholder="Your Email *" required>
- <select><option>What do you need help with?</option><option>Bridal alteration</option><option>General alteration</option><option>Zipper repair</option><option>Custom sewing</option><option>Dry cleaning</option><option>Other</option></select>
- <textarea rows="4" placeholder="Your Message * — tell us about the garment and when you need it" required></textarea>
+<form action="https://formsubmit.co/dftailoringexperts@gmail.com" method="POST">
+ <input type="text" name="Name" placeholder="Your Name *" required>
+ <input type="email" name="Email" placeholder="Your Email *" required>
+ <select name="Service"><option>What do you need help with?</option><option>Bridal alteration</option><option>General alteration</option><option>Zipper repair</option><option>Custom sewing</option><option>Dry cleaning</option><option>Other</option></select>
+ <textarea rows="4" name="Message" placeholder="Your Message * — tell us about the garment and when you need it" required></textarea>
  <button class="btn" type="submit">Send Message</button>
  </form>
- <p style="text-align:center;font-size:14px;opacity:.85">Note: this prototype form does not send yet — connect it to your email on the live site.</p>
  </div>
 </section>
 
