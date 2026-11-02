@@ -35,6 +35,10 @@
   .diamond-ornament i{display:block;width:10px;height:10px;background:#c9a86a;transform:rotate(45deg);border:1px solid #5c1a24}
   .card h3::before{content:"";display:inline-block;width:9px;height:9px;background:#c9a86a;transform:rotate(45deg);margin-right:9px;vertical-align:middle}
   .cover-logo{width:150px;height:150px;border-radius:50%;object-fit:cover;border:3px solid #c9a86a;display:block;margin:0 auto 18px;box-shadow:0 6px 20px rgba(0,0,0,.3);background:#f3ead8}
+
+  /* Faint logo watermark across the page background */
+  body::before{content:"";position:fixed;inset:0;background:url('images/logo-watermark.png') center top 120px / 620px auto no-repeat;opacity:.06;pointer-events:none;z-index:0}
+  header,section,footer{position:relative;z-index:1}
 </style>
 </head>
 <body>
@@ -46,7 +50,7 @@
 <div class="hero">
   <img class="cover-logo" src="logo.jpg" alt="D&F Tailoring Experts logo">
  <h1> Bridal Alterations in Victoria, BC</h1>
- <p>Your dress should fit like it was made for you. Expert bridal fittings, hemming and finishing .</p>
+ <p>Your dress should fit like it was made for you. Expert bridal fittings, hemming and finishing </p>
  <a class="btn" href="#book">Book a Bridal Fitting</a>
 </div>
 
@@ -59,6 +63,8 @@
  <figure><img src="images/media-generation-bridal-gown-1-0-29395b74-7701-4126-ac92-c0c2835ec1a1.webp" alt="Elegant lace bridal gown"><figcaption>Lace Elegance</figcaption></figure>
  <figure><img src="images/media-generation-bridal-gown-2-0-a20aaaad-0b84-41b7-8407-080a31be5cd5.webp" alt="Princess tulle bridal gown"><figcaption>Princess Tulle</figcaption></figure>
  <figure><img src="images/media-generation-bridal-gown-3-0-01c6d71d-b5c0-4f22-afd1-8ab1e3587ef0.webp" alt="Satin mermaid bridal gown"><figcaption>Satin Mermaid</figcaption></figure>
+ <figure><img src="images/new/bridal-lace-lacing.jpg" alt="White lace bridal dress with corset lacing"><figcaption>Real Work: Lace &amp; Corset Lacing</figcaption></figure>
+ <figure><img src="images/new/pink-lace-dress.jpg" alt="Pink lace dress with beaded embroidery"><figcaption>Real Work: Pink Lace Dress</figcaption></figure>
  </div>
 </section>
 
@@ -84,8 +90,8 @@
  <li><strong>One fitting</strong> — we pin, measure and plan every change together with you. One fitting is enough.</li>
  <li><strong>Final pickup</strong> — pressed, finished and ready for your wedding day.</li>
  </ol>
- <p><strong>When to start:</strong> we recommend starting 1-3 weeks before your wedding where possible. Last-minute? Ask us — we will do our best.</p>
- <p class="price">Bridal alterations </p>
+ <p><strong>When to start:</strong> we recommend starting 6–8 weeks before your wedding where possible. Last-minute? Ask us — we will do our best.</p>
+ <p class="price">Bridal alterations from CAD $35</p>
  <p>Final price depends on the dress and the work needed. We always confirm a quote before we start.</p>
  </div>
 </section>
@@ -105,14 +111,13 @@
  <h2>Book a Bridal Fitting — or Just Walk In!</h2>
   <div class="diamond-ornament" aria-hidden="true"><i></i></div>
  <p class="sub"> 543 Herald St, Victoria, BC · <a href="tel:+12368821539">236-882-1539</a> · <a href="mailto:dftailoringexperts@gmail.com">dftailoringexperts@gmail.com</a> · <a href="https://www.instagram.com/df_tailoring_experts" target="_blank" rel="noopener">@df_tailoring_experts</a></p>
- <form>
- <input type="text" placeholder="Your Name *" required>
- <input type="email" placeholder="Your Email *" required>
- <input type="text" placeholder="Wedding date (if known)">
- <textarea rows="4" placeholder="Tell us about your dress and what you need *" required></textarea>
+<form action="https://formsubmit.co/dftailoringexperts@gmail.com" method="POST">
+ <input type="text" name="Name" placeholder="Your Name *" required>
+ <input type="email" name="Email" placeholder="Your Email *" required>
+ <input type="text" name="Wedding date" placeholder="Wedding date (if known)">
+ <textarea rows="4" name="Message" placeholder="Tell us about your dress and what you need *" required></textarea>
  <button class="btn" type="submit">Request a Bridal Fitting</button>
  </form>
- <p style="text-align:center;font-size:14px;color:var(--muted)">Note: this prototype form does not send yet — connect it to your email on the live site.</p>
  <p style="text-align:center"><a href="index.html">← Back to Home</a></p>
 </section>
 
